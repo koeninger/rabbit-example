@@ -43,8 +43,6 @@ object Consumer extends App {
   Runtime.getRuntime.addShutdownHook(new Thread {
     override def run {
       report
-      channel.close
-      conn.close
     }
   })
 
